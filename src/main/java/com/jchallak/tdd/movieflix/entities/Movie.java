@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+import com.jchallak.tdd.movieflix.services.ReviewService;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -110,6 +111,10 @@ public class Movie {
 
     public List<Review> getReviews() {
         return reviews;
+    }
+
+    public void addReviews(Review review){
+        reviews.add(review);
     }
 
     @Override
