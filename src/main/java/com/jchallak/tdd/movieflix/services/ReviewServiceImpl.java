@@ -50,6 +50,6 @@ public class ReviewServiceImpl implements ReviewService {
         reviewDTO.setUserId(review1.getUser().getId());
         return reviewDTO;
     }
-    
+
 
 }
